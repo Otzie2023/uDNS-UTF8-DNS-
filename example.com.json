@@ -1,0 +1,58 @@
+{
+  "domain": "ddr.dkr",
+  "ttl": 3600,
+  "soa": {
+    "primary_ns": "ns1.ddr.dkr.",
+    "admin_email": "admin.ddr.dkr.",
+    "serial": 2025091001,
+    "refresh": 3600,
+    "retry": 600,
+    "expire": 1209600,
+    "minimum": 3600
+  },
+  "records": [
+    {
+      "type": "A",
+      "name": "@",
+      "value": "192.0.2.1"
+    },
+    {
+      "type": "AAAA",
+      "name": "@",
+      "value": "2001:db8::1"
+    },
+    {
+      "type": "CNAME",
+      "name": "www",
+      "value": "ä.dkr."
+    },
+    {
+      "type": "MX",
+      "name": "@",
+      "priority": 10,
+      "value": "mail.ä.dkr."
+    },
+    {
+      "type": "TXT",
+      "name": "@",
+      "value": "\"v=spf1 include:_spf.ä.dkr ~all\""
+    },
+    {
+      "type": "PTR",
+      "name": "@",
+      "value": "11.11.11"
+    },
+
+    {
+      "type": "NS",
+      "name": "@",
+      "value": "ns1.ä.dkr."
+    },
+    {
+      "type": "NS",
+      "name": "@",
+      "value": "ns2.ä.dkr."
+    }
+  ]
+}
+

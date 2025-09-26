@@ -1,0 +1,42 @@
+{
+  "zones": [
+    {
+      "domain": "example.dkr",
+      "zone_file": "example.dkr.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z"
+    },
+    {
+      "domain": "192.178.192.1.in-addr.arpa",
+      "zone_file": "reverse-192.178.192.1.json",
+      "enabled": true
+    },
+    {
+      "domain": "example.test",
+      "zone_file": "example.test.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z"
+    },
+    {
+      "domain": "ddr.dkr",
+      "zone_file": "example.com.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z",
+      "dnssec_enabled": true,
+      "dnssec_key_file": "keys/ddr.dkr.key"
+    },
+    {
+      "domain": "ä.dkr",
+      "zone_file": "ä.dkr.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z"
+    }
+  ],
+
+  "forwarders": [
+    { "address":  "192.168.178.36:53", "punny_weitergabe": true },
+    { "address":  "[2001:4860:4860::8844]:53", "punny_weitergabe": true }, 
+    { "address": "[2606:4700:4700::1001]:53", "punny_weitergabe": true }
+  ]
+}
+
