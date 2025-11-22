@@ -1,0 +1,45 @@
+{
+  "zones": [
+    {
+      "domain": "example.dkr",
+      "zone_file": "zones/example.dkr.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z"
+    },
+    {
+      "domain": "192.178.192.1.in-addr.arpa",
+      "zone_file": "zones/reverse-192.178.192.1.json",
+      "enabled": true
+    },
+    {
+      "domain": "example.test",
+      "zone_file": "zones/example.test.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z"
+    },
+    {
+      "domain": "hessen.dkr",
+      "zone_file": "zones/hessen.dkr.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z",
+      "dnssec_enabled": true,
+      "ZSK-public": "keys/hessen.dkr/Khessen.dkr.+015+49396.key",
+      "ZSK-private": "keys/hessen.dkr/Khessen.dkr.+015+49396.private",
+      "KSK-public": "Khessen.dkr.+015+25899.key",
+      "KSK-private": "Khessen.dkr.+015+25899.private"
+    },
+
+    {
+      "domain": "ä.dkr",
+      "zone_file": "zones/ä.dkr.json",
+      "enabled": true,
+      "last_updated": "2025-09-10T10:00:00Z"
+    }
+  ],
+
+  "forwarders": [
+    { "address": "[2606:4700:4700::1001]:53", "punny_weiterleitung": true, "DNSsec": true },
+    { "address": "1.1.1.1:53", "punny_weiterleitung": true, "DNSsec": true }
+  ]
+}
+

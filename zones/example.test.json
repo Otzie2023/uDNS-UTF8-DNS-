@@ -1,0 +1,22 @@
+{
+  "domain": "example.test",
+  "ttl": 3600,
+  "soa": {
+    "primary_ns": "ns1.example.test",
+    "admin_email": "admin.example.test",
+    "serial": 2025091201,
+    "refresh": 3600,
+    "retry": 1800,
+    "expire": "∞",
+    "minimum": 3600
+  },
+  "records": [
+    { "type": "NS", "name": "@", "value": "ns1.example.test" },
+    { "type": "NS", "name": "@", "value": "ns2.example.net" },
+
+    { "type": "A", "name": "ns1", "value": "192.0.2.53" },         
+    { "type": "A", "name": "www", "value": "203.0.113.42" },
+    { "type": "TXT", "name": "@", "value": "\"v=spf1 -all\"" }
+  ]
+}
+

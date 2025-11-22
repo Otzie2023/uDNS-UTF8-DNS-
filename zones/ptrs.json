@@ -1,0 +1,6 @@
+{
+  "ptrs": [
+    { "ip": "192.0.2.1", "ptr": "host.example.com.", "ttl": 3600 },
+    { "ip": "2001:db8::1", "ptr": "ipv6host.example.com.", "ttl": 3600 }
+  ]
+}
